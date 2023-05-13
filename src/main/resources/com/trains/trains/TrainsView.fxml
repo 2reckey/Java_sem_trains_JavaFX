@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.trains.trains.TrainController">
+   <children>
+      <TableView fx:id="table" prefHeight="363.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="163.0" text="Имя поезда" />
+          <TableColumn fx:id="type" prefWidth="226.0" text="Тип поезда" />
+            <TableColumn fx:id="cars" prefWidth="144.0" text="Количество вагонов" />
+            <TableColumn fx:id="seats" prefWidth="166.0" text="Мест в вагоне" />
+        </columns>
+      </TableView>
+      <Button layoutY="363.0" mnemonicParsing="false" onAction="#toHome" prefHeight="37.0" prefWidth="700.0" style="-fx-background-color: #000;" text="Назад" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
